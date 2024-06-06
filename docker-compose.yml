@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  informeaquiapi:
+    image: ${DOCKER_REGISTRY-}informeaquiapi
+    build:
+      context: .
+      dockerfile: InformeAquiAPI/Dockerfile
